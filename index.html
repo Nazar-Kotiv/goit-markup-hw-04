@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
 
-    <title>Homework#3</title>
+    <title>Homework#4</title>
   </head>
   <body>
     <header class="page-header">
@@ -38,15 +38,17 @@
             >Web<span class="accent">Studio</span></a
           >
           <ul class="navigation-menu">
-            <li class="site-nav-menu-list">
-              <a class="nav-link" href="./index.html">Studio</a>
-            </li>
-            <li class="site-nav-menu-list">
-              <a class="nav-link" href="">Portfolio</a>
-            </li>
-            <li class="site-nav-menu-list">
-              <a class="nav-link" href="">Contacts</a>
-            </li>
+            <div class="container-navigation-menu">
+              <li class="site-nav-menu-list">
+                <a class="nav-link current" href="./index.html">Studio</a>
+              </li>
+              <li class="site-nav-menu-list">
+                <a class="nav-link" href="">Portfolio</a>
+              </li>
+              <li class="site-nav-menu-list">
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+            </div>
           </ul>
         </nav>
 
@@ -82,37 +84,67 @@
         <div class="container">
           <h2 class="visually-hidden">WOW</h2>
           <ul class="section-text-list">
-            <li class="section-page-list">
-              <h3 class="section-text-title">Strategy</h3>
-              <p class="section-page-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
+            <div class="container-section-text-item">
+              <li class="section-page-list">
+                <div class="background-svg">
+                  <svg class="icon-section-text" width="64px" height="64px">
+                    <use
+                      href="./images/icons-svg-section-text.svg#icon-antenna"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="section-text-title">Strategy</h3>
+                <p class="section-page-text">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
 
-            <li class="section-page-list">
-              <h3 class="section-text-title">Punctuality</h3>
-              <p class="section-page-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
+              <li class="section-page-list">
+                <div class="background-svg">
+                  <svg class="icon-section-text" width="64px" height="64px">
+                    <use
+                      href="./images/icons-svg-section-text.svg#icon-astronaut"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="section-text-title">Punctuality</h3>
+                <p class="section-page-text">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </li>
 
-            <li class="section-page-list">
-              <h3 class="section-text-title">Diligence</h3>
-              <p class="section-page-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
+              <li class="section-page-list">
+                <div class="background-svg">
+                  <svg class="icon-section-text" width="64px" height="64px">
+                    <use
+                      href="./images/icons-svg-section-text.svg#icon-clock"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="section-text-title">Diligence</h3>
+                <p class="section-page-text">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
 
-            <li class="section-page-list">
-              <h3 class="section-text-title">Technologies</h3>
-              <p class="section-page-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
+              <li class="section-page-list">
+                <div class="background-svg">
+                  <svg class="icon-section-text" width="64px" height="64px">
+                    <use
+                      href="./images/icons-svg-section-text.svg#icon-diagram"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="section-text-title">Technologies</h3>
+                <p class="section-page-text">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -134,6 +166,36 @@
               <div class="container-our-team-text">
                 <h3 class="title-name">Mark Guerrero</h3>
                 <p class="section-our-team-text-list-team">Product Designer</p>
+                <ul class="social-icon">
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -149,6 +211,36 @@
                 <p class="section-our-team-text-list-team">
                   Frontend Developer
                 </p>
+                <ul class="social-icon">
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -162,6 +254,36 @@
               <div class="container-our-team-text">
                 <h3 class="title-name">Camila Garcia</h3>
                 <p class="section-our-team-text-list-team">Marketing</p>
+                <ul class="social-icon">
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="section-our-team-list">
@@ -174,6 +296,36 @@
               <div class="container-our-team-text">
                 <h3 class="title-name">Daniel Wilson</h3>
                 <p class="section-our-team-text-list-team">UI Designer</p>
+                <ul class="social-icon">
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="svg-list">
+                    <svg class="icon-our-team" width="16px" height="16px">
+                      <use
+                        href="./images/icons-svg-our-team.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>

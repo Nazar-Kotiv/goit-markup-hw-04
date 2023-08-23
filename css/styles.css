@@ -97,8 +97,8 @@ img{
     color: #434455;
     padding-right:40px;
     display: flex;
-    padding: 24px 0;
-    
+    padding: 24px 0;   
+    gap: 20px;
 }
 .site-nav-menu-list:hover,
 .site-nav-menu-list:focus{
@@ -111,14 +111,39 @@ img{
     font-weight: 500;
     letter-spacing: 0.02em;
     display: flex;
-    padding: 24px 0;    
-}
+    padding: 24px 0;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+ }
+ .nav-link .current{
+    color: var(--ocean, #404BBF);
+ }
 
 .nav-link:hover,
 .nav-link:focus
 {
    color: #404bbf;
 }
+
+.container-navigation-menu{
+    display: flex;
+    gap: 40px;
+    flex-shrink: 0;
+}
+
+.current::after{
+  content: "";
+    width: 48px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    background: var(--ocean, #404BBF);
+    position: absolute;
+} 
 
 .container-address{
     display: flex;
@@ -171,7 +196,12 @@ img{
     flex-shrink: 0;
     display: flex;
     padding: 188px 0;
-    
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-section-hero.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .page-title {
@@ -239,7 +269,22 @@ img{
 .section-text-list{
     display: flex;
     gap: 24px;
+}
+.icon-section-text{
+    fill:#2E2F42;
+    margin: 24px 100px;
+}
+.container-section-text-item{
+    display: flex;
+    gap:24px;
 
+}
+.background-svg{
+ border-radius: 4px;
+ border: 1px solid var(--lightslate, #8E8F99);
+ background: var(--cloud, #F4F4FD);
+ width: 264px;
+ height: 112px;
 }
 
 .section-text-title{
@@ -248,9 +293,9 @@ img{
     letter-spacing: 0.02em;
     line-height: 1.2;
     color:#2e2f42;
-    width: 264px;
     display: flex;
     margin-bottom: 8px;
+    margin-top: 8px;
 
 }
 .section-page-text{
@@ -267,6 +312,30 @@ img{
     display: flex;
     padding: 120px 0;
  
+}
+.social-icon{
+    display: flex;
+    gap:24px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-icon .svg-list{
+    width: 40px;
+ height: 40px;
+ flex-shrink: 0;
+ display: flex;
+ border-radius: 50%;
+ background-color: #4D5AE5;
+justify-content: center;
+    align-items: center;
+
+}
+
+
+.icon-our-team{
+    fill: #2E2F42;
 }
 
 .section-our-team-list{
@@ -308,6 +377,7 @@ img{
     color: #434455;
     text-align: center;
     line-height: 1.5;
+    margin-bottom: 8px;
     }
 
 .section-our-team {
