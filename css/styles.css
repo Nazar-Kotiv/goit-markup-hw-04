@@ -122,6 +122,17 @@ img{
  }
 .current{
     color: var(--ocean, #404BBF);
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    display: flex;
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .nav-link:hover,
@@ -239,7 +250,7 @@ img{
     min-width: 169px;
     height: 56px;
     border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-order-service:hover,
@@ -331,6 +342,7 @@ img{
     background-color: #4D5AE5;
     justify-content: center;
     align-items: center;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -427,7 +439,7 @@ background-color: #404bbf;
     height: 100%;
     color: var(--cloud, #F4F4FD);
     transform: translateY(100%);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -470,7 +482,7 @@ overflow: hidden;
     width: calc((100% - 48px) / 3);
     gap: 32px;
     flex-shrink: 0;
-    transition: box-shadow 250msscubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-portfolio-text{
     padding: 32px 16px;
@@ -540,7 +552,7 @@ overflow: hidden;
    display: flex;
 justify-content: center;
     align-items: center;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .footer-svg-list{
@@ -566,9 +578,14 @@ align-items: center;
 width: 100%;
 height: 100%;
 display: flex;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus{
     background-color:#31d0aa;
+}
+
+.icon-footer{
+    fill:#f4f4fd;
 }
